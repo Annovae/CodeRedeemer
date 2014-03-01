@@ -21,7 +21,7 @@
     SEL successCall, failureCall;
 }
 
-@property(nonatomic, retain) NSMutableData *webData;
+@property(nonatomic, strong) NSMutableData *webData;
 
 -(void)submitCode:(NSString *)enteredCode atURL:(NSString *)url sender:(UIViewController *)sender whenComplete:(SEL)success ifFails:(SEL)failure;
 

@@ -22,8 +22,8 @@
     userDefaults = [NSUserDefaults standardUserDefaults];
     
     //Set values for later
-    URL = [NSURL URLWithString:url]; [URL retain];
-    code = [NSMutableString stringWithString:enteredCode]; [code retain];
+    URL = [NSURL URLWithString:url]; 
+    code = [NSMutableString stringWithString:enteredCode]; 
     requestSender = sender;
     successCall = success;
     failureCall = failure;
@@ -33,7 +33,7 @@
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     
     if (connection) {
-        webData = [[NSMutableData data] retain];
+        webData = [NSMutableData data];
     }
 }
 
@@ -54,12 +54,16 @@
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Validation failed. Please check your internet connection." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
     [alert show];
-    [alert release];
-    
-    //Send a failure callback to the main view controller
-    [requestSender performSelector:failureCall];
     
     NSLog(@"Validation failed with error: %@", error);
+    
+    //Send a failure callback to the main view controller and suppress the Xcode warning
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    if ([requestSender respondsToSelector:failureCall]) {
+        [requestSender performSelector:failureCall];
+    }
+#pragma clang diagnostic pop
 }
 
 //Connection completed
@@ -73,17 +77,26 @@
         //Save the code so it can't be used again
         [userDefaults setObject:code forKey:@"CR_LastCode"];
         
-        //Send a success callback to the main view controller
-        [requestSender performSelector:successCall];
+        //Send a success callback to the main view controller and suppress the Xcode warning
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        if ([requestSender respondsToSelector:successCall]) {
+            [requestSender performSelector:successCall];
+        }
+#pragma clang diagnostic pop
         
     } else {
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The code you entered is invalid. Please check to make sure this is the correct code and try again." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
         [alert show];
-        [alert release];
         
-        //Send a failure callback to the main view controller
-        [requestSender performSelector:failureCall];
+        //Send a failure callback to the main view controller and suppress the Xcode warning
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        if ([requestSender respondsToSelector:failureCall]) {
+            [requestSender performSelector:failureCall];
+        }
+#pragma clang diagnostic pop
     }
 }
 
