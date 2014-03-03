@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CF1159F172C731A00739745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF1159E172C731A00739745 /* UIKit.framework */; };
+		4CF115A1172C731A00739745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF115A0172C731A00739745 /* Foundation.framework */; };
+		4CF115A3172C731A00739745 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF115A2172C731A00739745 /* CoreGraphics.framework */; };
+		4CF115A9172C731A00739745 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CF115A7172C731A00739745 /* InfoPlist.strings */; };
+		4CF115AB172C731A00739745 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF115AA172C731A00739745 /* main.m */; };
+		4CF115AF172C731A00739745 /* CodeRedeemerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF115AE172C731A00739745 /* CodeRedeemerAppDelegate.m */; };
+		4CF115B1172C731A00739745 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF115B0172C731A00739745 /* Default.png */; };
+		4CF115B3172C731A00739745 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF115B2172C731A00739745 /* Default@2x.png */; };
+		4CF115B5172C731A00739745 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF115B4172C731A00739745 /* Default-568h@2x.png */; };
+		4CF115B8172C731A00739745 /* CodeRedeemerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF115B7172C731A00739745 /* CodeRedeemerViewController.m */; };
+		4CF115BB172C731A00739745 /* CodeRedeemerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF115B9172C731A00739745 /* CodeRedeemerViewController.xib */; };
+		4CF115C3172C744400739745 /* CodeRedeemer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF115C2172C744400739745 /* CodeRedeemer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4CF1159B172C731A00739745 /* CodeRedeemer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeRedeemer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CF1159E172C731A00739745 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CF115A0172C731A00739745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CF115A2172C731A00739745 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CF115A6172C731A00739745 /* CodeRedeemer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodeRedeemer-Info.plist"; sourceTree = "<group>"; };
+		4CF115A8172C731A00739745 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CF115AA172C731A00739745 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CF115AC172C731A00739745 /* CodeRedeemer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeRedeemer-Prefix.pch"; sourceTree = "<group>"; };
+		4CF115AD172C731A00739745 /* CodeRedeemerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeRedeemerAppDelegate.h; sourceTree = "<group>"; };
+		4CF115AE172C731A00739745 /* CodeRedeemerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeRedeemerAppDelegate.m; sourceTree = "<group>"; };
+		4CF115B0172C731A00739745 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4CF115B2172C731A00739745 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4CF115B4172C731A00739745 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4CF115B6172C731A00739745 /* CodeRedeemerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeRedeemerViewController.h; sourceTree = "<group>"; };
+		4CF115B7172C731A00739745 /* CodeRedeemerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeRedeemerViewController.m; sourceTree = "<group>"; };
+		4CF115BA172C731A00739745 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CodeRedeemerViewController.xib; sourceTree = "<group>"; };
+		4CF115C1172C744400739745 /* CodeRedeemer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeRedeemer.h; sourceTree = "<group>"; };
+		4CF115C2172C744400739745 /* CodeRedeemer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeRedeemer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CF11598172C731A00739745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF1159F172C731A00739745 /* UIKit.framework in Frameworks */,
+				4CF115A1172C731A00739745 /* Foundation.framework in Frameworks */,
+				4CF115A3172C731A00739745 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CF11592172C731A00739745 = {
+			isa = PBXGroup;
+			children = (
+				4CF115A4172C731A00739745 /* CodeRedeemer */,
+				4CF1159D172C731A00739745 /* Frameworks */,
+				4CF1159C172C731A00739745 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CF1159C172C731A00739745 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CF1159B172C731A00739745 /* CodeRedeemer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CF1159D172C731A00739745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CF1159E172C731A00739745 /* UIKit.framework */,
+				4CF115A0172C731A00739745 /* Foundation.framework */,
+				4CF115A2172C731A00739745 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CF115A4172C731A00739745 /* CodeRedeemer */ = {
+			isa = PBXGroup;
+			children = (
+				4CF115B6172C731A00739745 /* CodeRedeemerViewController.h */,
+				4CF115B7172C731A00739745 /* CodeRedeemerViewController.m */,
+				4CF115B9172C731A00739745 /* CodeRedeemerViewController.xib */,
+				4CF115C1172C744400739745 /* CodeRedeemer.h */,
+				4CF115C2172C744400739745 /* CodeRedeemer.m */,
+				4CF115A5172C731A00739745 /* Supporting Files */,
+			);
+			path = CodeRedeemer;
+			sourceTree = "<group>";
+		};
+		4CF115A5172C731A00739745 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CF115AD172C731A00739745 /* CodeRedeemerAppDelegate.h */,
+				4CF115AE172C731A00739745 /* CodeRedeemerAppDelegate.m */,
+				4CF115A6172C731A00739745 /* CodeRedeemer-Info.plist */,
+				4CF115A7172C731A00739745 /* InfoPlist.strings */,
+				4CF115AA172C731A00739745 /* main.m */,
+				4CF115AC172C731A00739745 /* CodeRedeemer-Prefix.pch */,
+				4CF115B0172C731A00739745 /* Default.png */,
+				4CF115B2172C731A00739745 /* Default@2x.png */,
+				4CF115B4172C731A00739745 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CF1159A172C731A00739745 /* CodeRedeemer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CF115BE172C731A00739745 /* Build configuration list for PBXNativeTarget "CodeRedeemer" */;
+			buildPhases = (
+				4CF11597172C731A00739745 /* Sources */,
+				4CF11598172C731A00739745 /* Frameworks */,
+				4CF11599172C731A00739745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeRedeemer;
+			productName = CodeRedeemer;
+			productReference = 4CF1159B172C731A00739745 /* CodeRedeemer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CF11593172C731A00739745 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CodeRedeemer;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Michael Rebello";
+			};
+			buildConfigurationList = 4CF11596172C731A00739745 /* Build configuration list for PBXProject "CodeRedeemer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CF11592172C731A00739745;
+			productRefGroup = 4CF1159C172C731A00739745 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CF1159A172C731A00739745 /* CodeRedeemer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CF11599172C731A00739745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF115A9172C731A00739745 /* InfoPlist.strings in Resources */,
+				4CF115B1172C731A00739745 /* Default.png in Resources */,
+				4CF115B3172C731A00739745 /* Default@2x.png in Resources */,
+				4CF115B5172C731A00739745 /* Default-568h@2x.png in Resources */,
+				4CF115BB172C731A00739745 /* CodeRedeemerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CF11597172C731A00739745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF115AB172C731A00739745 /* main.m in Sources */,
+				4CF115AF172C731A00739745 /* CodeRedeemerAppDelegate.m in Sources */,
+				4CF115B8172C731A00739745 /* CodeRedeemerViewController.m in Sources */,
+				4CF115C3172C744400739745 /* CodeRedeemer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4CF115A7172C731A00739745 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CF115A8172C731A00739745 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CF115B9172C731A00739745 /* CodeRedeemerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CF115BA172C731A00739745 /* en */,
+			);
+			name = CodeRedeemerViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CF115BC172C731A00739745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CF115BD172C731A00739745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CF115BF172C731A00739745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodeRedeemer/CodeRedeemer-Prefix.pch";
+				INFOPLIST_FILE = "CodeRedeemer/CodeRedeemer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CF115C0172C731A00739745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodeRedeemer/CodeRedeemer-Prefix.pch";
+				INFOPLIST_FILE = "CodeRedeemer/CodeRedeemer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CF11596172C731A00739745 /* Build configuration list for PBXProject "CodeRedeemer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CF115BC172C731A00739745 /* Debug */,
+				4CF115BD172C731A00739745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CF115BE172C731A00739745 /* Build configuration list for PBXNativeTarget "CodeRedeemer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CF115BF172C731A00739745 /* Debug */,
+				4CF115C0172C731A00739745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CF11593172C731A00739745 /* Project object */;
+}
